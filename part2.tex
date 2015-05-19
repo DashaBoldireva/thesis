@@ -7,7 +7,7 @@
 
 Была приготовлена библиотека в соответствии с \textit{16S Metagenomic Sequencing Library Preparation }. Секвенирование проводилось на приборе Illumina MiSeq. В результате чего для каждого образца были получены следующие характеристики (см. таблицу \ref{tab:16Sread_Ill_characteristic})
 
-\begin{table}[H]
+\begin{table}[h]
 \caption{Характеристики образцов, отсеквенированных на Illumina MiSeq.}\label{tab:16Sread_Ill_characteristic}
 \begin{center}
 \begin{tabular}{|c|p{0.15\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|}
@@ -32,11 +32,11 @@
 
 \begin{figure}[h]
 \begin{minipage}[h]{0.5\linewidth}
-\center{\includegraphics[width=0.5\linewidth]{taxonomy_profile_16S_Illum_V3-V4} \\ а)}
+\center{\includegraphics[width=0.9\linewidth]{taxonomy_profile_16S_Illum_V3-V4} \\ а)}
 \end{minipage}
 \hfill
 \begin{minipage}[h]{0.5\linewidth}
-\center{\includegraphics[width=0.5\linewidth]{taxonomy_profile_16S_Illum_V5-V6} \\ б)}
+\center{\includegraphics[width=0.8\linewidth]{taxonomy_profile_16S_Illum_V5-V6} \\ б)}
 \end{minipage}
 \caption{Определение видового разнообразия по вареабельным участкам для каждого образца а) V3-V4, б) V5-V6}
 \label{ris:taxonomy_V3-V4, V5-V6}
@@ -46,11 +46,11 @@
 
 \begin{figure}[h]
 \begin{minipage}[h]{0.5\linewidth}
-\center{\includegraphics[width=0.5\linewidth]{V3-V4} \\ а)}
+\center{\includegraphics[width=0.9\linewidth]{V3-V4} \\ а)}
 \end{minipage}
 \hfill
 \begin{minipage}[h]{0.5\linewidth}
-\center{\includegraphics[width=0.5\linewidth]{V5-V6} \\ б)}
+\center{\includegraphics[width=0.9\linewidth]{V5-V6} \\ б)}
 \end{minipage}
 \caption{Определение видового разнообразия по вареабельным участкам а) V3-V4, б) V5-V6}
 \label{ris:V3-V4, V5-V6}
@@ -60,21 +60,15 @@
 
 \begin{figure}[h]
 \begin{minipage}[h]{0.5\linewidth}
-\center{\includegraphics[width=0.5\linewidth]{concentr} \\ а)}
+\center{\includegraphics[width=0.7\linewidth]{concentr} \\ а)}
 \end{minipage}
 \hfill
 \begin{minipage}[h]{0.5\linewidth}
-\center{\includegraphics[width=0.5\linewidth]{3cvet} \\ б)}
+\center{\includegraphics[width=0.9\linewidth]{3cvet} \\ б)}
 \end{minipage}
-\caption{а) Зависимость концентрация кислорода и сероводорода от глубины , б) Бактериальный профиль оз. Трехцветное}
+\caption{а) Зависимость концентрация кислорода и сероводорода от глубины, б) Бактериальный профиль оз. Трехцветное}
 \label{ris:concentr, 3cvet}
 \end{figure}
-
-\section{Секвенирование вариабельных участков V2-4-8/ V3-V6,V7-V9 гена 16S рРНК} \label{sect2_2}
-
-Была приготовлена библиотека с использованием  Ion 16S Metagenomics Kit, в состав которого входит два набора праймеров, первый позволяет получать ампликоны вариабельных участков V2-4-8, второй - V3-V6, V7-V9. Секвенирование проводилось на приборе Ion Torrent PGM. В результате было получено 52 246 ридов, соответсвующих первому набору праймеров, и 50 043 ридов, соответствующих второму набору праймеров. 
-
-Повторное секвенирование гена 16S рРНК показало, что доминантным представителем является \textit{Chlorobium}. Последующий сбор ридов в контиги позволил лучше определить такснономическое разнообразие. Для более точного установления из данных по shotgun-секвенированию были выбраны риды, которые соответствуют вариабельным участкам V1, V5. 
 
 \section{Shotgun-секвнирование}
 После выделения ДНК (см. \ref{subsect1_2_1}) для каждого образца была измерена ее концентрация. Затем все образцы были смешаны в эквимолярном соотношении. После была приготовлена библиотека в соответствии с $IonXpress^{TM}$ \textit{Plus gDNA Fragment Library Preparation}. Секвенирование проводилось на приборе Ion Torrent PGM. В результате было получено 3 573 896 ридов, средняя длина которых 179 пар оснований. Далее полученные риды были собраны в контиги с использованием  сборщиков Newbler и SPAdes Genome Assembler, которые различаются алгоритмом сборки. Newbler использует метод сборки OLC (overlap-layout-consensus), SPAdes работает на основе графов де Брёйна. Использование двух разных методов сбрки было необходимо для достижения лучшего результата определения принадлежности полученных ридов. Полученные контиги были проаннотированы с использованием программы PROKKA. Также были получены EC-номера для генов, которые были найдены в полученных контигах. По EC-номерам и с помощью онлайн ресурса KEGG были получены карты метаболических путей. 
@@ -82,7 +76,7 @@
 По собранным контигам из shotgun-секвенирования была установлена метаболическая карта для \textit{Chlorobium}, что дало возможность анализировать и сравнивать данный тип бактерий с другими представителями рода (см. рис. \ref{img:kegg}). 
 
 \begin{figure}[h]
-  \includegraphics[width=10cm]{kegg}
+  \includegraphics[width=18cm]{kegg}
   \centering
   \caption{Карта метаболических путей}
   \label{img:kegg}  
@@ -90,7 +84,29 @@
 
 Также для них были получены карты метаболических путей серы и азота. По метаболическому пути азота удалось установить, что данные бактерии являются азотофиксирующими. Метаболический путь серы указал на способность бактерий к аноксигенному фотосинтезу с использованием серосодержащих веществ как доноров серы. 
 
-\center $\mathrm{C O_2 + 2H_2 S + h\nu \xrightarrow{} (C H_2 O) + H_2 O + 2 S}$
+\begin{center}
+$\mathrm{C O_2 + 2H_2 S + h\nu \xrightarrow{} (C H_2 O) + H_2 O + 2 S}$
+\end{center} 
 
+\section{Секвенирование вариабельных участков V2-4-8/ V3-V6, V7-V9 гена 16S рРНК} \label{sect2_2}
+
+Была приготовлена библиотека с использованием  Ion 16S Metagenomics Kit, в состав которого входит два набора праймеров, первый позволяет получать ампликоны вариабельных участков V2-4-8, второй - V3-V6, V7-V9. Секвенирование проводилось на приборе Ion Torrent PGM. В результате было получено 52 246 ридов, соответсвующих первому набору праймеров, и 50 043 ридов, соответствующих второму набору праймеров. После риды были собраны и проаннотированы с использованием RDP. Также были проаннотированы и не собранные в контиги риды. Затем все риды были визуализированы в MEGAN5 (см. рис. \ref{ris:sg+16S}). 
+
+Из полученных при shotgun-секвенировании ридов были выделены риды, которые относятся к гену 16S рРНК. Они были также собраны, проаннотированы и добавлены к вышеописанным ридам . Затем все риды были визуализированы в MEGAN5 (см. рис. \ref{ris:sg+16S}). 
+
+\begin{figure}[h]
+\begin{minipage}[h]{0.6\linewidth}
+\center{\includegraphics[width=0.9\linewidth]{sg+16S} \\ }
+\end{minipage}
+\hfill
+\begin{minipage}[h]{0.5\linewidth}
+\center{\includegraphics[width=0.4\linewidth]{legend} \\ }
+\end{minipage}
+\caption{Реконструкция бактериального профиля озера Трёхцветное}
+\label{ris:sg+16S}
+\end{figure}
+
+Такой подход позволил с хорошей точностью не только определить бактерии, которые болше остальных представлены в данном водоеме, но и других представителей. 
+Как видно из рис. \ref{ris:sg+16S}, доминантным представителем является \textit{Chlorobium}.  
 
 \clearpage
